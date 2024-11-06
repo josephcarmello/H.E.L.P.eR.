@@ -21,9 +21,6 @@ async def on_ready():
 async def on_error(event, *args, **kwargs):
     print(f"Error in event {event}: {args} {kwargs}")
 
-@bot.command(name="ping")
-async def ping(ctx):
-    await ctx.send("Pong! 🏓")
 
 if __name__ == "__main__":
     for extension in initial_extensions:
