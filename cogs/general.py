@@ -5,10 +5,6 @@ class General(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @bot.command(name="ping")
-    async def ping(ctx):
-        await ctx.send("Pong! 🏓")
-
     @commands.slash_command(name="hello", description="Say hello to the bot!")
     async def hello(self, inter: disnake.ApplicationCommandInteraction):
         await inter.response.send_message("Hello! 👋")
